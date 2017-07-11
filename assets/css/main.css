@@ -1323,6 +1323,10 @@
 	-webkit-transform: scale(1);
 	transform: scale(1);
 	height: auto;
+				-moz-transition-delay: 0s;
+				-webkit-transition-delay: 0s;
+				-ms-transition-delay: 0s;
+				transition-delay: 0s;
 }
 a {
 	border-bottom: none;
