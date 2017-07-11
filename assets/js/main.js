@@ -282,7 +282,7 @@
 					popupSpeed: 300,
 					popupWidth: 300,
 					selector: '.thumb > a.image',
-					usePopupCaption: true,
+					usePopupCaption: false,
 					usePopupCloser: true,
 					usePopupDefaultStyling: false,
 					usePopupForceClose: true,
