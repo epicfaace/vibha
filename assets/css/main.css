@@ -249,7 +249,7 @@
 		font-size: 0.7em;
 	}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 767px) {
 
 		h2 {
 			font-size: 1em;
@@ -497,7 +497,7 @@
 			margin: 1.5em 0 0 0 !important;
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 767px) {
 
 			form .field.half {
 				float: none;
@@ -1078,7 +1078,7 @@
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 767px) {
 
 			.panel {
 				-moz-transform: translateY(-100vh);
@@ -1265,7 +1265,7 @@
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 767px) {
 
 			.poptrox-popup:before {
 				display: none;
@@ -1489,7 +1489,7 @@
 							background-color: #242629;
 						}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 767px) {
 
 		body {
 			padding: 4em 0 0 0;
