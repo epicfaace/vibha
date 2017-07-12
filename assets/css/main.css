@@ -995,7 +995,7 @@
 	@media screen and (max-width: 767px) {
 
 		body {
-			padding: 4em 0 0 0;
+			padding: 0 0 0 0;
 		}
 
 		#header {
@@ -1382,4 +1382,16 @@ a {
 article.thumb#info {
 	max-height: none;
 	height: auto;
+}
+nav, .nav-item, .navbar-brand {
+  font-weight: bold;
+}
+.navbar-light .navbar-toggler {
+	box-shadow: none;
+    border: none;
+    margin-top: -2%;
+}
+.navbar-nav {/*centers it*/
+float: none;
+    margin: auto;
 }
