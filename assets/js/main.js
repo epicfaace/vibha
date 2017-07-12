@@ -309,6 +309,15 @@ $("a.parallax").click(function(e) {
 	e.preventDefault();
    scrollToAnchor($(this).attr("href").substring(1)); //removes # from it.
 });
+$("form#contactForm").submit(function() {
+	$.post($(this).attr("action"), $(this).serialize()).done(function() {
+		alert("Contact form submitted! Thank you.");
+		$(this).find("input").val("");
+	}).fail(function() {
+		alert("Sorry, there was an error. Please try again.");
+	})
+	return false;
+});
 
 
 	});
