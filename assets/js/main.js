@@ -310,15 +310,15 @@ $("a.parallax").click(function(e) {
    scrollToAnchor($(this).attr("href").substring(1)); //removes # from it.
 });
 $("form#contactForm").submit(function() {
-	$.post($(this).attr("action"), $(this).serialize()).done(function() {
-		alert("Contact form submitted! Thank you.");
-		$(this).find("input").val("");
-	}).fail(function() {
-		alert("Sorry, there was an error. Please try again.");
+	$.getJSON($(this).attr("action"), $(this).serialize()).done(function() {
+		$("input[type=submit]").val("Thank you for your response!!!");
 	})
+	$("input[type=submit]").attr("disabled","disabled");
+	setTimeout(function() {
+		$("input[type=submit]").val("Thank you for your response!");
+	}, 2000);
 	return false;
 });
-
 
 	});
 
