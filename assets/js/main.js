@@ -16,6 +16,12 @@
 
 	$(function() {
 
+		if ($(window).width() < 768) {
+			$("article.thumb > a.image").each(function() {
+				$(this).attr("href", $(this).children("img").attr("src"));
+			});
+		}
+
 		var	$window = $(window),
 			$body = $('body'),
 			$wrapper = $('#wrapper');
@@ -282,7 +288,7 @@
 					popupSpeed: 300,
 					popupWidth: 300,
 					selector: '.thumb > a.image',
-					usePopupCaption: false,
+					usePopupCaption: $(window).width() < 768,
 					usePopupCloser: true,
 					usePopupDefaultStyling: false,
 					usePopupForceClose: true,
@@ -294,10 +300,14 @@
 				// Hack: Set margins to 0 when 'xsmall' activates.
 					skel
 						.on('-xsmall', function() {
-							$main[0]._poptrox.windowMargin = 50;
+							//$main[0]._poptrox.windowMargin = 50;
+							$("body").removeClass("xsmall");
+							$("div.caption").css("bottom","-5000px");
 						})
 						.on('+xsmall', function() {
-							$main[0]._poptrox.windowMargin = 0;
+							//$main[0]._poptrox.windowMargin = 0;
+							$("body").addClass("xsmall");
+							$("div.caption").css("bottom","0px");
 						});
 
 function scrollToAnchor(aid){

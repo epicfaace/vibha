@@ -1453,3 +1453,14 @@ form textarea, form input {
 article.flier a.image {
 	background-position-y: top;
 }
+
+@media only screen and (max-width: 767px) {
+	div.pic {
+		position: fixed;
+		top: 20px;
+	}
+	.poptrox-popup {
+		background: transparent;
+		box-shadow: none;
+	}
+}
