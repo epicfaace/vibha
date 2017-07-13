@@ -1338,6 +1338,10 @@
 
 		}
 
+		#main .thumb {
+			height: 30vw;
+		}
+
 /* Footer */
 
 	#footer .copyright {
