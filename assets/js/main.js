@@ -16,7 +16,7 @@
 
 	$(function() {
 
-		if ($(window).width() < 768) {
+		if ($("body").width() < 768) {
 			$("article.thumb > a.image").each(function() {
 				$(this).attr("href", $(this).children("img").attr("src"));
 			});
@@ -288,7 +288,7 @@
 					popupSpeed: 300,
 					popupWidth: 300,
 					selector: '.thumb > a.image',
-					usePopupCaption: $(window).width() < 768,
+					usePopupCaption: $("body").width() < 768,
 					usePopupCloser: true,
 					usePopupDefaultStyling: false,
 					usePopupForceClose: true,
