@@ -1348,6 +1348,16 @@
 				transition: transform .5s ease, 
 				            opacity 0.65s 3.05s ease;
 			}
+			#main .thumb:nth-child(18) {
+			-moz-transition: transform .5s ease, 
+				            opacity 0.65s 3.20s ease;
+			-webkit-transition: transform .5s ease, 
+				            opacity 0.65s 3.20s ease;
+			-ms-transition: transform .5s ease, 
+				            opacity 0.65s 3.20s ease;
+				transition: transform .5s ease, 
+				            opacity 0.65s 3.20s ease;
+			}
 		@media screen and (max-width: 1680px) {
 
 			#main .thumb {
@@ -1457,7 +1467,12 @@ article.flier a.image {
 @media only screen and (max-width: 767px) {
 	div.pic {
 		position: fixed;
-		top: 20px;
+		top: 10%;
+		left: 50%;
+		margin-left: -142px;
+	}
+	div.pic img {
+		border-radius: 10px;
 	}
 	.poptrox-popup {
 		background: transparent;
