@@ -1479,3 +1479,10 @@ article.flier a.image {
 		box-shadow: none;
 	}
 }
+/*vibha site styles*/
+header {
+display: none;
+}
+footer {
+	background: #a0a0a1;
+}
