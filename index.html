@@ -29,6 +29,12 @@
 footer {
 	background: none;
 }
+@media only screen and (min-width:768px) {
+.caption {
+	display: none !important;
+}
+
+}
 
 @media only screen and (max-width: 767px) {
 	div.pic {
@@ -87,10 +93,6 @@ footer {
 		bottom: 0px !important;
 		top: 10%;
 	}
-}
-
-.showCaption .caption {
-	bottom: 0px !important;
 }
 
 </style>
@@ -486,7 +488,7 @@ footer {
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
 			<script src="https://cdn.rawgit.com/epicfaace/vibha/master/assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="https://cdn.rawgit.com/epicfaace/vibha/master/assets/js/main.js"></script>
+			<script src="./assets/js/main.js"></script>
 <script>
 $(function() {
 	$(".flier a").click(function() {
@@ -496,6 +498,13 @@ $(function() {
 					window.location = $(this).find("img").attr("src");
 				});
 			}, 1000);
+	});
+	$(".thumb.showCaption a").click(function() {
+		console.log("ahu");
+		setTimeout(function() {
+			$(".poptrox-popup div.caption").attr("style","display: block !important");
+		}, 1000);
+		
 	});
 });
 

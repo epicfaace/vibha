@@ -288,7 +288,7 @@
 					popupSpeed: 300,
 					popupWidth: 300,
 					selector: '.thumb > a.image',
-					usePopupCaption: $("body").width() < 768,
+					usePopupCaption: true,
 					usePopupCloser: true,
 					usePopupDefaultStyling: false,
 					usePopupForceClose: true,
